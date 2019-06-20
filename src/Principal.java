@@ -87,6 +87,26 @@ public class Principal {
 				System.out.println("Ordem Aceita: " + str);
 			}
 			
+			//List<String> teste = new ArrayList<String>();     //ArrayList criado para testar a HashSet (trocar listaAceita por test)
+			//testeList.add("Raul");
+			//testeList.add("Angelo");
+			//testeList.add("Marcelo");
+			
+			Set<String> ordenada = new HashSet<String>();			//Aqui ordena as Cadeias aceitas
+			
+			for(String aceita : listaAceita) {
+				ordenada.add(aceita);
+			}
+			System.out.println("\nCADEIAS ACEITAS PELO AFD:");
+			for(String aceita : listaAceita) {
+				System.out.println(aceita);
+			}			
+			
+			System.out.println("\nCADEIA ORDENADA:");
+			for(String aceita : ordenada) {
+				System.out.println(aceita);
+			}			
+			
 		}catch(Exception e){
   			System.out.println("Erro: " + e.getMessage());
   			}
